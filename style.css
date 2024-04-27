@@ -13,18 +13,22 @@
     transition: all .2s linear;
 }
 
+body{
+    background-color: #282a2b;
+}
+
 .header{
     width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #282a2b;
+    background-color: #202020;
 }
 
 .h1{
     font-weight: 100;
-    color: #677727;
+    color: #c9d3c3;
 }
 
 .notes-body{
