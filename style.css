@@ -1,0 +1,155 @@
+--root{
+    --background: #282a2b;
+    --dark-green: #677727;
+    --mid-green: #9ba88d;
+    --light-green: #c9d3c3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all .2s linear;
+}
+
+.header{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282a2b;
+}
+
+.h1{
+    font-weight: 100;
+    color: #677727;
+}
+
+.notes-body{
+    width: 100%;
+    min-height: 84.5vh;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282a2b;
+}
+
+.close{
+    width: 100%;
+    max-width: 50rem;
+    padding: 2rem 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 2.5rem 2.5rem 0 2.5rem;
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    background-color: #202020;
+}
+
+.open{
+    width: 100%;
+    max-width: 50rem;
+    height: 57vh;
+    padding: 2rem 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 2.5rem 2.5rem 0 2.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #202020;
+}
+
+input, textarea{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid #fefefe;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #677727;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+textarea{
+    height: 10rem;
+}
+
+.add{
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: #c9d3c3;
+    background-color: #677727;
+}
+
+.btn-form{
+    padding: .3rem 1rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    border: none;
+    border-radius: 100%;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #c9d3c3;
+    background-color: #677727;
+    z-index: 1000;
+}
+
+.btn-form-close{
+    transform: rotate(-45deg);
+}
+
+.container{
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#list{
+    width: 30rem;
+    list-style: none;
+    background-color: #202020;
+}
+
+.li{
+    border-bottom: .2rem solid #333;
+    padding: 1.5rem 2rem;
+}
+
+.note-title{
+    margin: 0 0 .5rem 0;
+    color: #677727;
+}
+
+.note-desc{
+    line-height: 1.8;
+    color: #c9d3c3;
+}
+
+.date{
+    float: right;
+    font-size: .8rem;
+    color: #9ba88d;
+}
+
+.del-note{
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: #c9d3c3;
+    background-color: #677727;
+}

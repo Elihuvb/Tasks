@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header"><h1 class="h1">Notes</h1></header>
+    <div class="notes-body">
+      <button type="button" class="btn-form">+</button>
+      <form id="form" class="close">
+        <input type="text" id="title" placeholder="Title" /><br />
+        <textarea id="notes" placeholder="Write a note"></textarea><br />
+        <button type="submit" class="add">Guardar</button>
+      </form>
+      <div class="container">
+        <ul id="list"></ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
